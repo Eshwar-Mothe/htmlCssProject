@@ -2,7 +2,6 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
-    /* color: #a53b3b; */
     font-family: sans-serif;
     box-sizing: border-box;
 }
@@ -24,9 +23,6 @@ a * {
     --gradient-background: linear-gradient(15deg, var(--primary-color), var(--secondary-color));
     --transparent-gradient-background: linear-gradient(rgba(30, 78, 64, 0.65), rgba(44, 85, 73, 0.65));
 }
-
-
-
 
 #header {
     position: sticky;
@@ -60,8 +56,6 @@ a * {
 .navbar-collapse {
     display: flex;
     align-items: center;
-    /* padding: 25px 0px; */
-    /* padding: 5px; */
     flex-grow: 1;
 }
 
@@ -71,7 +65,6 @@ a * {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 5rem;
-    /* flex-grow: 2; */
 }
 
 .navbar-icon {
@@ -91,13 +84,11 @@ ul {
     justify-content: space-between;
     align-items: flex-start;
     flex: 2;
-    /* width: 100%; */
 }
 
 ul li {
     font-size: 15px;
     letter-spacing: 1px;
-    /* width: 20%; */
     color: #fff !important;
     text-transform: uppercase;
 }
@@ -105,14 +96,13 @@ ul li {
 ul li a {
     font-weight: 400;
     color: #fff !important;
-
     &:hover {
         color: var(--primary-color) !important;
     }
 }
 
 .banner-container {
-    max-width: 100%;
+    width: 100%;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     position: relative;
     overflow: hidden;
@@ -121,18 +111,12 @@ ul li a {
     padding-top: 150px;
     padding-bottom: 150px;
 }
-
-
 /* Main Section Styling */
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 0;
-    max-height: 30rem;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Caption Styling starts */
@@ -155,11 +139,8 @@ main h6 {
     padding: 10px 15px;
     width: 100%;
     border-radius: 100px;
-    /* margin: 2rem 0; */
     background-color: #fff;
 }
-
-
 
 .custom-form .input-group-text {
     border: 0;
@@ -175,10 +156,6 @@ main h6 {
 .custom-form .form-control {
     border-radius: 100px;
     color: var(--primary-color);
-    /* margin-bottom: 24px;  */
-    /* padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 20px; */
     outline: none;
 }
 
@@ -216,7 +193,6 @@ main h6 {
 
 /* Card Section Styles */
 .card-section {
-    height: 35rem;
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: auto auto;
@@ -271,19 +247,16 @@ main h6 {
     width: 70%;
     font-size: 1.2rem;
     color: gray;
-    /* margin: 2rem; */
 }
 
 .white-card img {
     width: 100%;
-    height: 200px;
     object-fit: cover;
 }
 
 /* BG Card Styles */
 
 .bgCard {
-    /* border: 2px solid gray; */
     width: 85%;
     height: 30rem;
     border-radius: 15px;
@@ -493,7 +466,6 @@ main h6 {
     font-weight: 600;
 }
 
-
 .market .tag {
     background-color: #F50057;
 }
@@ -538,14 +510,12 @@ main h6 {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* width: 50%; */
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
 }
 
 .para1,.para2,.para3{
-    /* margin-left: 10rem; */
     width: 70%;
 }
 
@@ -569,7 +539,6 @@ main h6 {
     border-radius: 50%;
     z-index: 1;
     transition: 0.4s all;
-    /* margin:5rem 2rem; */
 }
 
 
@@ -624,18 +593,82 @@ font-size: 25px;
 
 .faq img{
     width: 30%;
-    height: 100%;
     object-fit: cover;
 }
 
-@media (max-width: 760px){
-    .Wholecontainer{
+@media (max-width: 750px){
+    
+    .navbar>.container{
+        gap: 0;
+    }
+    main h1 {
+        width: 100%;
+        font-size: 3rem;
+        word-wrap:break-word;
+        font-weight: 700;
+    }
+
+    main h6 {
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #button{
+        font-size: 10px;
+        flex: 3;
+    }
+    .card-section{
+        grid-template-columns: auto;
+        gap: 1rem;
+        justify-items: center;
+    }
+    .white-card{
+        width: 90%;
+        left: 0;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .bgCard{
+        width: 90%;
+        right: 0;
+        left: 0;
+    }
+    
+    .timeLine{
         display: none;
     }
 
-    .mobile{
-        display: block;
+
+    .topic-cards{
+        grid-template-columns: 90%;
+        justify-items: center;
+        gap: .5rem;
     }
+
+    .circle1::before, .circle2::before, .circle3::before,.circle1,.circle2,.circle3{
+        display: none;
+    }
+
+    .para1,.para2,.para3{
+        width: 100%;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .faq h1{
+        width: 100%;
+    }
+
+    .faq img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
 }
 
 @media (min-width: 768px){

@@ -13,8 +13,7 @@
 
 <body>
     <!-- nav Bar -->
-     <h1 class="mobile">Responsive need to be added, kindly visit on Desktop</h1>
-    <div class="Wholecontainer">
+     
     <header id="header">
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container">
@@ -387,15 +386,54 @@
             </div>
         </div>
 
-        <div class="faq" style="display: none;">
+        <div class="faq">
             <h1>Frequently Asked Questions</h1>
             <div class="image">
                 <img src="faq_graphic.jpg" alt="">
             </div>
 
-            <!-- <h2><button class="qu1">What is topic Listing</button> <span>&#129171;</span></h2> -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is Topic Listing?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Topic Listing is free Bootstrap 5 CSS template.
+                      <strong>You are not allowed to redistribute this template</strong>
+                      on any other template collection website without our permission. Please contact TemplateMo for more detail. Thank you.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How to find a topic?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        You can search on Google with
+                      <strong>keywords</strong>
+                      such as templatemo portfolio, templatemo one-page layouts, photography, digital marketing, etc.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Does it need to paid?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> 
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-    </div>
         <script>
             document.addEventListener('scroll', () => {
                 const header = document.querySelector('header')
